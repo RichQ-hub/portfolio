@@ -1,7 +1,7 @@
 import Project from "../types/Project";
 import { FRONTEND, BACKEND, REACT_JS } from "./tags";
 
-const projects: Project[] = [
+const PROJECTS: Project[] = [
     {
         title: 'Flockr',
         description: 
@@ -35,3 +35,5 @@ const projects: Project[] = [
         github: 'https://github.com/RichQ-hub/yelp-clone'
     }
 ]
+
+export default PROJECTS;
