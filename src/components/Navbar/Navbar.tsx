@@ -1,6 +1,6 @@
 import NavbarItem from './NavbarItem';
 import ROUTES from '../../data/routes';
-import { Box, Button } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import { DocumentScanner } from '@mui/icons-material';
 
 export default function Navbar() {
@@ -15,26 +15,47 @@ export default function Navbar() {
             top: '0',
             display: 'flex',
             justifyContent: 'space-between',
-            gap: '2rem',
             alignItems: 'center',
         }}>
-            {/* Route btns. */}
-            <Box>
-                {ROUTES.map((route) => {
-                    const { page, href } = route;
-                    return (
-                        <NavbarItem 
-                            key={page} 
-                            name={page} 
-                            href={href}
-                        />
-                    )
-                })}
+            {/* Left Navbar */}
+            <Box sx={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '10%',
+                whiteSpace: 'nowrap' // Prevents the text from wrapping.
+            }}>
+                <Typography sx={{
+                    fontFamily: 'Roboto',
+                    fontSize: '1.75rem',
+                    fontWeight: 'bold',
+                    color: '#5484FF',
+                }}>
+                    Richard Quisumbing
+                </Typography>
+                {/* Route btns. */}
+                <Box sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '4rem',
+                }}>
+                    {ROUTES.map((route) => {
+                        const { page, href } = route;
+                        return (
+                            <NavbarItem 
+                                key={page} 
+                                name={page} 
+                                href={href}
+                            />
+                        )
+                    })}
+                </Box>
             </Box>
-
+            
+            {/* Right Navbar */}
             {/* Nav Resume Btn. */}
             <Box>
-                <a download href="/resume.pdf" target="_blank">
+                {/* DOWNLOAD LINK FOR RESUME CURRENTLY NOT WORKING!! */}
+                <a download href="/resume.pdf" target="_blank"> 
                     <Button variant='outlined' endIcon={<DocumentScanner />} sx={{
                         textTransform: 'none',
                     }}>

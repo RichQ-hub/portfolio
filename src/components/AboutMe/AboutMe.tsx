@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box'
 import { Button, Stack, Typography } from '@mui/material';
+import TypewriterComponent from 'typewriter-effect';
 
 import {ReactComponent as Coding} from '../../assets/svg/coding.svg';  
 
@@ -7,7 +8,7 @@ export default function AboutMe() {
     return (
         <Box sx={{
             height: 'calc(100vh - 4.8rem)',
-            padding: '2rem 4rem',
+            padding: '2rem 3rem',
             display: 'flex',
             alignItems: 'center',
         }}>
@@ -19,18 +20,43 @@ export default function AboutMe() {
                 color: 'white',
                 fontFamily: 'Rajdhani',
             }}>
-                <Typography variant='h1' sx={{
+                <Typography variant='h4' sx={{
                     fontFamily: 'inherit',
+                    fontWeight: 500,
+                }}>
+                    Welcome! I'm
+                </Typography>
+                <Typography sx={{
+                    fontFamily: 'inherit',
+                    fontSize: '4.3rem',
                     fontWeight: 700,
                 }}>
-                    Hi, I'm Richard.
+                    RICHARD QUISUMBING
                 </Typography>
-                <Typography variant='h3' sx={{
-                    fontFamily: 'inherit',
-                    fontWeight: '600',
+
+                {/* Typewriter */}
+                <Box sx={{
+                    '& *': {
+                        fontFamily: 'Inconsolata',
+                        fontSize: '2rem',
+                        color: '#569CD6',
+                        fontWeight: '600',
+                        display: 'inline'
+                    }
                 }}>
-                    I love to build amazing apps.
-                </Typography>
+                    {/* Note: &nbsp is an entity code to simply add whitespace at the end. */}
+                    <Typography>I love to&nbsp;</Typography> 
+                    <TypewriterComponent 
+                        options={{
+                            strings: ['learn new technologies.', 'build amazing apps.'],
+                            autoStart: true,
+                            loop: true,
+                            delay: 60,
+                            deleteSpeed: 30,
+                        }}
+                    />
+                </Box>
+               
                 <Typography sx={{
                     margin: '3rem 0',
                     fontFamily: 'inherit',
@@ -72,7 +98,8 @@ export default function AboutMe() {
 
             {/* SVG Coder Section. */}
             <Box sx={{
-                minWidth: '300px',
+                minWidth: '400px',
+                maxWidth: '600px',
                 '& .coding-img': {
                     height: '100%',
                     width: '100%'
