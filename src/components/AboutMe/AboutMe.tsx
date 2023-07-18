@@ -95,17 +95,19 @@ export default function AboutMe() {
 
                 {/* Buttons section */}
                 <Stack spacing={5} direction='row'>
-                    <Button variant='contained' sx={{
-                        background: '#17E469',
-                        textTransform: 'none',
-                        '&:hover': {
-                            background: '#13bc57',
-                        },
-                        fontFamily: 'Rajdhani',
-                        fontWeight: '700',
-                        color: 'black',
-                        fontSize: '1.25rem',
-                    }}>Resume</Button>
+                    <a href="resume.pdf" download> 
+                        <Button variant='contained' sx={{
+                            background: '#17E469',
+                            textTransform: 'none',
+                            '&:hover': {
+                                background: '#13bc57',
+                            },
+                            fontFamily: 'Rajdhani',
+                            fontWeight: '700',
+                            color: 'black',
+                            fontSize: '1.25rem',
+                        }}>Resume</Button>
+                    </a>
 
                     <Link to='projects' smooth duration={1000}>
                         <Button variant='outlined' sx={{
