@@ -10,7 +10,7 @@ const PROJECTS: Project[] = [
     {
         title: 'Flockr',
         description: 
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc luctus, massa et commodo euismod, ex leo egestas nunc, vitae maximus dolor tortor sed metus. Phasellus risus diam, bibendum at volutpat ac, ullamcorper ut dui. Nam ac elementum risus, semper luctus.',
+            'A chat application developed in a team of 4. Similar to Discord, it includes features such as authentication, chat rooms and real-time messaging. This project served as my introduction into backend development with Python and Flask.',
         img: flockr,
         tags: [BACKEND],
         github: 'https://github.com/RichQ-hub/Flockr'
@@ -18,7 +18,7 @@ const PROJECTS: Project[] = [
     {
         title: 'Persolvo',
         description: 
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc luctus, massa et commodo euismod, ex leo egestas nunc, vitae maximus dolor tortor sed metus. Phasellus risus diam, bibendum at volutpat ac, ullamcorper ut dui. Nam ac elementum risus, semper luctus.',
+            'An interactive pathfinding tool designed to assist students visualise well-known pathfinding algorithms on a grid-like surface.',
         img: persolvo,
         tags: [FRONTEND, REACT_JS],
         github: 'https://github.com/RichQ-hub/Persolvo',
@@ -35,10 +35,10 @@ const PROJECTS: Project[] = [
     {
         title: 'Diner Critic (WIP)',
         description: 
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc luctus, massa et commodo euismod, ex leo egestas nunc, vitae maximus dolor tortor sed metus. Phasellus risus diam, bibendum at volutpat ac, ullamcorper ut dui. Nam ac elementum risus, semper luctus.',
+            'A fullstack application inspired by Yelp for reviewing restaurants. In the future, this app will feature authentication, a rating system, sorting system, and much more.',
         img: dinerCritic,
         tags: [FRONTEND, BACKEND, REACT_JS],
-        github: 'https://github.com/RichQ-hub/yelp-clone'
+        github: 'https://github.com/RichQ-hub/yelp-clone',
     }
 ]
 

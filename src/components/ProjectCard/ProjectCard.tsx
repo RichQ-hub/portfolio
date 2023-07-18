@@ -93,7 +93,7 @@ export default function ProjectCard(props: ProjectCardProps) {
                     <Typography sx={{
                         margin: '1.4rem 0',
                         fontFamily: 'Rajdhani',
-                        fontSize: '1rem',
+                        fontSize: '1.1rem',
                         fontWeight: 500,
                     }}>{description}</Typography>
 
