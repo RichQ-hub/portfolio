@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-Deployed on Netlify - [Demo](https://richq-portfolio.netlify.app/)
+Deployed on Netlify - [Demo](https://richq-portfolio.netlify.app/){:target="_blank"}
 
 ## Available Scripts
 
