@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box'
 import { Button, Stack, Typography } from '@mui/material';
 import TypewriterComponent from 'typewriter-effect';
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
 import {ReactComponent as Coding} from '../../assets/svg/coding.svg';
@@ -106,18 +107,20 @@ export default function AboutMe() {
                         fontSize: '1.25rem',
                     }}>Resume</Button>
 
-                    <Button variant='outlined' sx={{
-                        textTransform: 'none',
-                        fontFamily: 'Rajdhani',
-                        fontWeight: '700',
-                        fontSize: '1.25rem',
-                        border: '1px solid #17e4696d', // Border is dimmed green.
-                        color: '#ffffffb9', // The button text is dimmed white.
-                        '&:hover': { // When hovering the button, the border and colour become brighter.
-                            border: '1px solid #17E469',
-                            color: 'white',
-                        }
-                    }}>See My Past Work</Button>
+                    <Link to='projects' smooth duration={1000}>
+                        <Button variant='outlined' sx={{
+                            textTransform: 'none',
+                            fontFamily: 'Rajdhani',
+                            fontWeight: '700',
+                            fontSize: '1.25rem',
+                            border: '1px solid #17e4696d', // Border is dimmed green.
+                            color: '#ffffffb9', // The button text is dimmed white.
+                            '&:hover': { // When hovering the button, the border and colour become brighter.
+                                border: '1px solid #17E469',
+                                color: 'white',
+                            }
+                        }}>See My Past Work</Button>
+                    </Link>
                 </Stack>
             </Box>
 
