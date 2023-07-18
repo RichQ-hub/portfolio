@@ -22,7 +22,7 @@ const PROJECTS: Project[] = [
         img: persolvo,
         tags: [FRONTEND, REACT_JS],
         github: 'https://github.com/RichQ-hub/Persolvo',
-        link: 'https://richq-hub.github.io/Persolvo/'
+        link: 'https://persolvo.netlify.app'
     },
     // {
     //     title: 'Loop Mania',
