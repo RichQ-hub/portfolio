@@ -3,7 +3,19 @@ import { Button, Stack, Typography } from '@mui/material';
 import TypewriterComponent from 'typewriter-effect';
 import styled from 'styled-components';
 
-import {ReactComponent as Coding} from '../../assets/svg/coding.svg';  
+import {ReactComponent as Coding} from '../../assets/svg/coding.svg';
+
+// Redundant Wrapper. (To do)
+const AboutWrapper = styled.section`
+    height: calc(100vh - 4.8rem);
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+`;
 
 const TypewriterWrapper = styled.div`
     * {
@@ -17,7 +29,7 @@ const TypewriterWrapper = styled.div`
 
 export default function AboutMe() {
     return (
-        <Box sx={{
+        <Box id="about" sx={{
             height: 'calc(100vh - 4.8rem)',
             padding: '2rem 3rem',
             display: 'flex',

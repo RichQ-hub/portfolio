@@ -13,6 +13,7 @@ export default function Navbar() {
             background: '#1D2430',
             position: 'fixed',
             top: '0',
+            zIndex: '1',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
