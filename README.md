@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deployed on Netlify - [Demo](https://richq-portfolio.netlify.app/)
 
 ## Available Scripts
 
