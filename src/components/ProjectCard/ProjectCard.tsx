@@ -1,4 +1,4 @@
-import { Grid, Typography, Box } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import Tag from '../../types/Tag'
 import { styled } from 'styled-components';
 import { GitHub, Link } from '@mui/icons-material';
@@ -70,13 +70,12 @@ export default function ProjectCard(props: ProjectCardProps) {
         title, 
         img,
         description,
-        tags,
         github,
         link
     } = props;
 
     return (
-        <Grid item container columnSpacing={4} direction={position % 2 == 0 ? "row" : "row-reverse"}>
+        <Grid item container columnSpacing={4} direction={position % 2 === 0 ? "row" : "row-reverse"}>
             <Grid item xs={12} md={5} sx={{
                 display: 'flex',
                 alignItems: 'center',

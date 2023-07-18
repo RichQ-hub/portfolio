@@ -7,16 +7,16 @@ import styled from 'styled-components';
 import {ReactComponent as Coding} from '../../assets/svg/coding.svg';
 
 // Redundant Wrapper. (To do)
-const AboutWrapper = styled.section`
-    height: calc(100vh - 4.8rem);
-    padding: 2rem 3rem;
-    display: flex;
-    align-items: center;
+// const AboutWrapper = styled.section`
+//     height: calc(100vh - 4.8rem);
+//     padding: 2rem 3rem;
+//     display: flex;
+//     align-items: center;
 
-    @media (max-width: 800px) {
-        flex-direction: column;
-    }
-`;
+//     @media (max-width: 800px) {
+//         flex-direction: column;
+//     }
+// `;
 
 const TypewriterWrapper = styled.div`
     * {
