@@ -61,7 +61,7 @@ export default function Navbar() {
             {/* Nav Resume Btn. */}
             <Box>
                 {/* DOWNLOAD LINK FOR RESUME CURRENTLY NOT WORKING!! */}
-                <a download href="/resume.pdf" target="_blank"> 
+                <a href="/resume.pdf" download> 
                     <Button variant='outlined' endIcon={<DocumentScanner />} sx={{
                         textTransform: 'none',
                     }}>
