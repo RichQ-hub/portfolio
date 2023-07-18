@@ -1,8 +1,19 @@
 import Box from '@mui/material/Box'
 import { Button, Stack, Typography } from '@mui/material';
 import TypewriterComponent from 'typewriter-effect';
+import styled from 'styled-components';
 
 import {ReactComponent as Coding} from '../../assets/svg/coding.svg';  
+
+const TypewriterWrapper = styled.div`
+    * {
+        display: inline;
+        font-family: Inconsolata;
+        font-size: 2rem;
+        color: #569CD6;
+        font-weight: 600;
+    };
+`;
 
 export default function AboutMe() {
     return (
@@ -35,27 +46,29 @@ export default function AboutMe() {
                 </Typography>
 
                 {/* Typewriter */}
-                <Box sx={{
-                    '& *': {
+                    {/* Note: &nbsp is an entity code to simply add whitespace at the end. */}
+                
+
+                <TypewriterWrapper>
+                    <Typography sx={{
                         fontFamily: 'Inconsolata',
                         fontSize: '2rem',
                         color: '#569CD6',
-                        fontWeight: '600',
-                        display: 'inline'
-                    }
-                }}>
-                    {/* Note: &nbsp is an entity code to simply add whitespace at the end. */}
-                    <Typography>I love to&nbsp;</Typography> 
-                    <TypewriterComponent 
-                        options={{
-                            strings: ['learn new technologies.', 'build amazing apps.'],
-                            autoStart: true,
-                            loop: true,
-                            delay: 60,
-                            deleteSpeed: 30,
-                        }}
-                    />
-                </Box>
+                        fontWeight: 600,
+                    }}>
+                        I love to&nbsp;
+                        <TypewriterComponent 
+                            options={{
+                                strings: ['learn new technologies.', 'build amazing apps.'],
+                                autoStart: true,
+                                loop: true,
+                                delay: 60,
+                                deleteSpeed: 30,
+                            }}
+                        />
+                    </Typography>
+                    
+                </TypewriterWrapper>
                
                 <Typography sx={{
                     margin: '3rem 0',

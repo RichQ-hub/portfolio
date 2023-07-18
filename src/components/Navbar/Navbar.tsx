@@ -1,6 +1,6 @@
 import NavbarItem from './NavbarItem';
 import ROUTES from '../../data/routes';
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button, Typography, Divider } from '@mui/material';
 import { DocumentScanner } from '@mui/icons-material';
 
 export default function Navbar() {
@@ -19,21 +19,26 @@ export default function Navbar() {
         }}>
             {/* Left Navbar */}
             <Box sx={{
+                height: '100%',
                 display: 'flex',
+                gap: '2rem',
                 alignItems: 'center',
-                gap: '10%',
                 whiteSpace: 'nowrap' // Prevents the text from wrapping.
             }}>
                 <Typography sx={{
-                    fontFamily: 'Roboto',
-                    fontSize: '1.75rem',
-                    fontWeight: 'bold',
-                    color: '#5484FF',
+                    fontFamily: 'Inconsolata',
+                    fontSize: '2rem',
+                    fontWeight: '900',
+                    color: '#569CD6',
                 }}>
-                    Richard Quisumbing
+                    RQ
                 </Typography>
+
+                <Divider orientation='vertical' flexItem sx={{ background: 'white' }} />
+
                 {/* Route btns. */}
                 <Box sx={{
+                    height: '100%',
                     display: 'flex',
                     alignItems: 'center',
                     gap: '4rem',
